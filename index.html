@@ -2,161 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07070a">
-  <meta name="description" content="Kristians Client — a cinematic Minecraft 26.3 Fabric client with custom visuals, cosmetics, HUDs and responsive interface design.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070708">
+  <meta name="description" content="Kristians Client — a cinematic Minecraft 26.3 Fabric client with custom visuals, cosmetics, HUDs and a complete ClickGUI.">
   <meta property="og:title" content="Kristians Client">
-  <meta property="og:description" content="A cinematic visual client for Minecraft 26.3 Fabric.">
+  <meta property="og:description" content="Minecraft, directed differently. Visuals, cosmetics and a complete client interface for Fabric 26.3.">
   <meta property="og:url" content="https://eineartkristian.github.io/kristians-client/">
   <meta property="og:image" content="https://eineartkristian.github.io/kristians-client/assets/social-card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Kristians Client — Minecraft 26.3</title>
+  <title>Kristians Client — Minecraft, directed differently.</title>
   <link rel="icon" href="assets/emblem.png">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="curtains" aria-hidden="true"></div>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Kristians Client home">
-      <img src="assets/emblem.png" alt="">
-      <span>Kristians Client</span>
-    </a>
-    <nav aria-label="Primary navigation">
-      <a href="#features">Features</a>
-      <a href="#install">Install</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <a class="header-download" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download</a>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav-wrap">
+    <a class="brand" href="#top"><img src="assets/emblem.png" alt=""><span>Kristians Client</span></a>
+    <nav aria-label="Main navigation"><a href="#showcase">Showcase</a><a href="#clickgui">ClickGUI</a><a href="#modules">Modules</a><a href="#install">Install</a></nav>
+    <a class="nav-download" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download</a>
   </header>
 
   <main id="top">
-    <section class="hero section-shell">
+    <section class="hero shell">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span></span>Minecraft 26.3 · Fabric</div>
-        <h1>Your game,<br><em>recomposed.</em></h1>
-        <p>Kristians Client transforms Minecraft with cinematic skies, expressive cosmetics, responsive HUDs and a visual system built to feel alive.</p>
+        <div class="release-pill"><span></span>1.6.71 is live · Minecraft 26.3</div>
+        <h1>Minecraft,<br><em>directed differently.</em></h1>
+        <p>A private visual client built around cinematic worlds, expressive cosmetics and an interface that feels designed instead of assembled.</p>
         <div class="hero-actions">
-          <a class="button button-primary" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">
-            <span>Download 1.6.71</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
-          </a>
-          <a class="button button-ghost" href="#features">Explore the client</a>
+          <a class="primary" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download for Fabric</a>
+          <a class="secondary" href="#showcase">See it in game</a>
         </div>
-        <div class="compatibility" aria-label="Compatibility">
-          <span>Fabric 26.3</span><i></i><span>Java 25</span><i></i><span>Lunar compatible</span>
-        </div>
+        <div class="requirements"><span>Fabric 26.3</span><span>Java 25</span><span>Lunar compatible</span></div>
       </div>
-
-      <div class="hero-mark reveal" aria-label="Kristians Client emblem">
-        <div class="mark-orbit orbit-one"></div>
-        <div class="mark-orbit orbit-two"></div>
-        <div class="mark-glow"></div>
-        <img src="assets/emblem.png" alt="Kristians Client emblem">
-        <div class="version-card glass">
-          <div><span>Current release</span><strong>1.6.71</strong></div>
-          <div class="live-dot"><span></span>Ready</div>
+      <div class="hero-product reveal">
+        <div class="product-window">
+          <div class="window-bar"><i></i><i></i><i></i><span>Kristians Client</span><b>60 FPS</b></div>
+          <img src="assets/main-menu.png" alt="Kristians Client main menu">
         </div>
+        <div class="product-glow"></div>
       </div>
     </section>
 
-    <section class="manifesto section-shell reveal">
-      <p>More than a menu redesign.</p>
-      <h2>A complete visual layer for the way you play.</h2>
-    </section>
+    <section class="ticker" aria-label="Client highlights"><div><span>CUSTOM SKY</span><i></i><span>LIQUID GLASS</span><i></i><span>PLAYER ESP</span><i></i><span>COSMETICS</span><i></i><span>EMOTES</span><i></i><span>WORLD FX</span><i></i><span>CUSTOM SKY</span><i></i><span>LIQUID GLASS</span></div></section>
 
-    <section id="features" class="features section-shell">
-      <article class="feature feature-sky reveal">
-        <div class="feature-label">01 · WORLD</div>
-        <div class="sky-art" aria-hidden="true"><span></span><span></span><span></span></div>
-        <div class="feature-copy">
-          <h3>Cinematic worlds</h3>
-          <p>Procedural nebulae, auroras, atmosphere, fog tinting, bloom and ambient effects rendered with fluid motion.</p>
-          <ul><li>Eight custom sky modes</li><li>Atmosphere and WorldFX</li><li>Performance presets</li></ul>
-        </div>
-      </article>
-
-      <article class="feature feature-interface reveal">
-        <div class="feature-label">02 · INTERFACE</div>
-        <div class="ui-demo glass" aria-hidden="true">
-          <div class="ui-search">Search modules <span>⌘ K</span></div>
-          <div class="ui-columns">
-            <div><b>Visuals</b><p>CustomSky <i class="toggle active"></i></p><p>Atmosphere <i class="toggle"></i></p></div>
-            <div><b>Cosmetics</b><p>Skeleton <i class="toggle active"></i></p><p>Horns <i class="toggle active"></i></p></div>
-          </div>
-        </div>
-        <div class="feature-copy">
-          <h3>Interface with character</h3>
-          <p>Independent draggable panels, liquid-glass surfaces, smooth typography, animated HUDs and several complete themes.</p>
-        </div>
-      </article>
-
-      <article class="feature feature-cosmetics reveal">
-        <div class="feature-label">03 · COSMETICS</div>
-        <div class="cosmetic-art" aria-hidden="true">
-          <div class="halo"></div><img src="assets/emblem.png" alt="">
-        </div>
-        <div class="feature-copy">
-          <h3>Make it yours</h3>
-          <p>Custom player models, animated wings, themed horns, the Star Wand, emotes and synchronized cosmetics for friends running the client.</p>
-        </div>
-      </article>
-
-      <article class="feature feature-play reveal">
-        <div class="feature-label">04 · PLAY</div>
-        <div class="metrics" aria-hidden="true">
-          <div><strong>ESP</strong><span>outlines · tracers · boxes</span></div>
-          <div><strong>HUD</strong><span>target · music · modules</span></div>
-          <div><strong>VIEW</strong><span>pose · swing · item glow</span></div>
-        </div>
-        <div class="feature-copy">
-          <h3>Information, refined</h3>
-          <p>Configurable player visuals, target information, view-model controls and HUD modules keep useful information close without clutter.</p>
-        </div>
-      </article>
-    </section>
-
-    <section id="install" class="install section-shell reveal">
-      <div class="install-heading">
-        <div class="eyebrow"><span></span>INSTALLATION</div>
-        <h2>Three steps.<br>Then make it yours.</h2>
-        <p>Built for Minecraft 26.3 with Fabric Loader 0.20.1 or newer.</p>
-      </div>
-      <ol class="steps">
-        <li><span>01</span><div><h3>Download</h3><p>Get the latest JAR from the official GitHub release.</p></div></li>
-        <li><span>02</span><div><h3>Add to Fabric</h3><p>Place the JAR in your profile’s <code>mods</code> folder with Fabric API installed.</p></div></li>
-        <li><span>03</span><div><h3>Open the client</h3><p>Launch Minecraft and press <kbd>K</kbd> to open Kristians Client. Every key can be rebound.</p></div></li>
-      </ol>
-      <a class="button button-primary wide" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download Kristians Client</a>
-    </section>
-
-    <section id="faq" class="faq section-shell reveal">
-      <div class="faq-title"><span>FAQ</span><h2>Before you launch.</h2></div>
-      <div class="faq-list">
-        <details><summary>Does it work with Lunar Client?<i></i></summary><p>Yes. Add the JAR to a Lunar Minecraft 26.3 profile configured to load Fabric mods.</p></details>
-        <details><summary>Do friends need the mod?<i></i></summary><p>Local visuals work by themselves. Synchronized cosmetics and emotes require the same JAR on participating clients and the Fabric server.</p></details>
-        <details><summary>Where are the controls?<i></i></summary><p>Press K for the client interface. Keybinds can be changed in Minecraft’s normal Controls menu.</p></details>
-        <details><summary>Can I use every module anywhere?<i></i></summary><p>Server rules differ. Use gameplay-assistance modules only where the server owner explicitly allows them.</p></details>
+    <section id="showcase" class="showcase shell">
+      <div class="section-head reveal"><div><span>SHOWCASE</span><h2>Not a feature list.<br>See the client.</h2></div><p>Actual captures from Kristian’s Client, from the custom landing screen to cosmetics and server utilities.</p></div>
+      <div class="gallery">
+        <button class="shot shot-main reveal" data-image="assets/main-menu.png" aria-label="Open main menu screenshot">
+          <img src="assets/main-menu.png" alt="Kristians Client custom main menu">
+          <span><b>Main menu</b><small>Animated curtains, live player preview and custom navigation</small></span>
+        </button>
+        <button class="shot shot-game reveal" data-image="assets/gameplay.png" aria-label="Open cosmetics screenshot">
+          <img src="assets/gameplay.png" alt="Player with horns and Star Wand">
+          <span><b>Cosmetics</b><small>Horns, custom fire and the Star Wand in game</small></span>
+        </button>
+        <button class="shot shot-watch reveal" data-image="assets/inventory-watch.png" aria-label="Open inventory watch screenshot">
+          <img src="assets/inventory-watch.png" alt="Inventory Watch interface">
+          <span><b>Inventory Watch</b><small>Tracked items shown beside nearby players</small></span>
+        </button>
       </div>
     </section>
 
-    <section class="final-cta section-shell reveal">
-      <img src="assets/emblem.png" alt="">
-      <p>Current release · 1.6.71</p>
-      <h2>Change how Minecraft feels.</h2>
-      <a class="button button-light" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download for Fabric 26.3</a>
+    <section id="clickgui" class="gui-section">
+      <div class="shell">
+        <div class="section-head reveal"><div><span>INTERACTIVE CLICKGUI</span><h2>The whole client,<br>inside the page.</h2></div><p>Search modules, expand panels and try the toggles. This browser recreation is generated from the current client categories.</p></div>
+        <div class="gui-stage reveal" id="guiStage">
+          <div class="gui-topbar"><div class="gui-brand"><img src="assets/emblem.png" alt="">KRISTIANS CLIENT</div><label><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg><input id="moduleSearch" type="search" placeholder="Search modules…" autocomplete="off"></label><div class="gui-theme"><i></i>ORCHID</div></div>
+          <div class="panel-canvas" id="panelCanvas" aria-label="Interactive module panels"></div>
+          <div class="gui-status"><span><i></i>LOCAL · READY</span><span id="moduleCount">0 MODULES</span></div>
+        </div>
+        <p class="gui-hint">Drag a panel by its header · Press + to expand · Click a module to toggle it</p>
+      </div>
+    </section>
+
+    <section id="modules" class="module-reference shell">
+      <div class="section-head reveal"><div><span>MODULE REFERENCE</span><h2>Made for more than<br>one kind of player.</h2></div><p>Every visible category in the current build, from cinematic render effects to local utility and custom cosmetics.</p></div>
+      <div class="category-tabs reveal" id="categoryTabs"></div>
+      <div class="module-list reveal" id="moduleList"></div>
+    </section>
+
+    <section class="visual-break">
+      <div class="nebula" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="shell reveal"><span>GOLDEN PLASMA NEBULA</span><h2>Eight skies.<br>One world that never sits still.</h2><p>Animated procedural skies, color-aware world lighting, atmosphere, fog tinting and optional bloom.</p><div class="sky-pills"><b>Golden Plasma</b><b>Void Nebula</b><b>Celestial Aurora</b><b>Crimson Storm</b><b>Cosmic Ocean</b><b>Ethereal Heaven</b><b>Black Hole</b><b>Starfall</b></div></div>
+    </section>
+
+    <section id="install" class="install shell reveal">
+      <div><span>GET THE CLIENT</span><h2>One JAR.<br>Your Minecraft.</h2><p>Kristians Client runs on Minecraft 26.3 with Fabric Loader 0.20.1 or newer, Fabric API and Java 25.</p></div>
+      <ol><li><b>01</b><span><strong>Download the release</strong>Get the current JAR directly from GitHub.</span></li><li><b>02</b><span><strong>Add it to Fabric</strong>Drop it into your profile’s mods folder with Fabric API.</span></li><li><b>03</b><span><strong>Open the interface</strong>Launch Minecraft and press K. Every bind is adjustable.</span></li></ol>
+      <a class="primary install-button" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download Kristians Client 1.6.71</a>
     </section>
   </main>
 
-  <footer class="section-shell">
-    <div class="brand"><img src="assets/emblem.png" alt=""><span>Kristians Client</span></div>
-    <p>Not affiliated with Mojang Studios, Microsoft, Fabric or Lunar Client.</p>
-    <a href="https://github.com/EineArtKristian/kristians-client">GitHub</a>
-  </footer>
+  <footer class="shell"><div class="brand"><img src="assets/emblem.png" alt=""><span>Kristians Client</span></div><p>Not affiliated with Mojang Studios, Microsoft, Fabric or Lunar Client.</p><a href="https://github.com/EineArtKristian/kristians-client">GitHub</a></footer>
+
+  <dialog id="lightbox"><button aria-label="Close screenshot">×</button><img alt="Expanded client screenshot"></dialog>
 </body>
 </html>
