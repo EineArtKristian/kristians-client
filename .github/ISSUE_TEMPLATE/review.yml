@@ -1,0 +1,28 @@
+name: Client review
+description: Leave a public star rating for Kristians Client
+title: "[5★] Review by "
+labels:
+  - review
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reviewing Kristians Client. Please keep the rating in the title so it appears correctly on the website.
+  - type: dropdown
+    id: rating
+    attributes:
+      label: Rating
+      options:
+        - 5 stars
+        - 4 stars
+        - 3 stars
+        - 2 stars
+        - 1 star
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Review
+      placeholder: What did you like, and what could be improved?
+    validations:
+      required: true

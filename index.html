@@ -20,21 +20,21 @@
   <div class="noise" aria-hidden="true"></div>
   <header class="nav-wrap">
     <a class="brand" href="#top"><img src="assets/emblem.png" alt=""><span>Kristians Client</span></a>
-    <nav aria-label="Main navigation"><a href="#showcase">Showcase</a><a href="#clickgui">ClickGUI</a><a href="#modules">Modules</a><a href="#install">Install</a></nav>
+    <nav aria-label="Main navigation"><a href="#showcase">Showcase</a><a href="#clickgui">ClickGUI</a><a href="#modules">Modules</a><a href="#compatibility">Compatibility</a><a href="#reviews">Reviews</a></nav>
     <a class="nav-download" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download</a>
   </header>
 
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy reveal">
-        <div class="release-pill"><span></span>1.6.71 is live · Minecraft 26.3</div>
+        <div class="release-pill"><span></span>Completely free · no subscription · no license key</div>
         <h1>Minecraft,<br><em>directed differently.</em></h1>
-        <p>A private visual client built around cinematic worlds, expressive cosmetics and an interface that feels designed instead of assembled.</p>
+        <p>A free visual client built around cinematic worlds, expressive cosmetics and an interface that feels designed instead of assembled.</p>
         <div class="hero-actions">
           <a class="primary" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download for Fabric</a>
           <a class="secondary" href="#showcase">See it in game</a>
         </div>
-        <div class="requirements"><span>Fabric 26.3</span><span>Java 25</span><span>Lunar compatible</span></div>
+        <div class="requirements"><span>Fabric 26.3</span><span>1.21.11 port in progress</span><span>Lunar compatible</span></div>
       </div>
       <div class="hero-product reveal">
         <div class="product-window">
@@ -48,20 +48,21 @@
     <section class="ticker" aria-label="Client highlights"><div><span>CUSTOM SKY</span><i></i><span>LIQUID GLASS</span><i></i><span>PLAYER ESP</span><i></i><span>COSMETICS</span><i></i><span>EMOTES</span><i></i><span>WORLD FX</span><i></i><span>CUSTOM SKY</span><i></i><span>LIQUID GLASS</span></div></section>
 
     <section id="showcase" class="showcase shell">
-      <div class="section-head reveal"><div><span>SHOWCASE</span><h2>Not a feature list.<br>See the client.</h2></div><p>Actual captures from Kristian’s Client, from the custom landing screen to cosmetics and server utilities.</p></div>
+      <div class="section-head reveal"><div><span>SHOWCASE</span><h2>Not a feature list.<br>See the client.</h2></div><p>Actual captures from Kristian’s Client: three ClickGUI styles, cinematic skies, cosmetics and the custom landing screen.</p></div>
       <div class="gallery">
-        <button class="shot shot-main reveal" data-image="assets/main-menu.png" aria-label="Open main menu screenshot">
+        <button class="shot shot-main reveal" data-image="assets/clickgui-glass.png" aria-label="Open Liquid Glass ClickGUI screenshot">
+          <img src="assets/clickgui-glass.png" alt="Kristians Client Liquid Glass ClickGUI">
+          <span><b>Liquid Glass</b><small>Independent panels, live world refraction and fluid controls</small></span>
+        </button>
+        <button class="shot reveal" data-image="assets/main-menu.png" aria-label="Open main menu screenshot">
           <img src="assets/main-menu.png" alt="Kristians Client custom main menu">
-          <span><b>Main menu</b><small>Animated curtains, live player preview and custom navigation</small></span>
+          <span><b>Main menu</b><small>Animated curtains and a live player preview</small></span>
         </button>
-        <button class="shot shot-game reveal" data-image="assets/gameplay.png" aria-label="Open cosmetics screenshot">
-          <img src="assets/gameplay.png" alt="Player with horns and Star Wand">
-          <span><b>Cosmetics</b><small>Horns, custom fire and the Star Wand in game</small></span>
-        </button>
-        <button class="shot shot-watch reveal" data-image="assets/inventory-watch.png" aria-label="Open inventory watch screenshot">
-          <img src="assets/inventory-watch.png" alt="Inventory Watch interface">
-          <span><b>Inventory Watch</b><small>Tracked items shown beside nearby players</small></span>
-        </button>
+        <button class="shot reveal" data-image="assets/sky-orange.png" aria-label="Open orange plasma sky screenshot"><img src="assets/sky-orange.png" alt="Orange plasma sky and cosmetics"><span><b>Golden plasma</b><small>Theme-aware skies, trails and cosmetics</small></span></button>
+        <button class="shot reveal" data-image="assets/sky-void.png" aria-label="Open void sky screenshot"><img src="assets/sky-void.png" alt="Dark void nebula sky"><span><b>Void nebula</b><small>Cinematic atmosphere with animated stars</small></span></button>
+        <button class="shot reveal" data-image="assets/sky-green.png" aria-label="Open green plasma sky screenshot"><img src="assets/sky-green.png" alt="Green plasma sky and player effects"><span><b>Theme sync</b><small>World VFX follow your client color</small></span></button>
+        <button class="shot reveal" data-image="assets/clickgui-vape.png" aria-label="Open Vape Classic ClickGUI screenshot"><img src="assets/clickgui-vape.png" alt="Vape Classic ClickGUI"><span><b>Vape Classic</b><small>A sharp, compact interface preset</small></span></button>
+        <button class="shot reveal" data-image="assets/clickgui-orchid.png" aria-label="Open Orchid ClickGUI screenshot"><img src="assets/clickgui-orchid.png" alt="Orchid ClickGUI"><span><b>Orchid</b><small>Soft translucent panels and purple accents</small></span></button>
       </div>
     </section>
 
@@ -71,7 +72,6 @@
         <div class="gui-stage reveal" id="guiStage">
           <div class="gui-topbar"><div class="gui-brand"><img src="assets/emblem.png" alt="">KRISTIANS CLIENT</div><label><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg><input id="moduleSearch" type="search" placeholder="Search modules…" autocomplete="off"></label><div class="gui-theme"><i></i>ORCHID</div></div>
           <div class="panel-canvas" id="panelCanvas" aria-label="Interactive module panels"></div>
-          <div class="gui-status"><span><i></i>LOCAL · READY</span><span id="moduleCount">0 MODULES</span></div>
         </div>
         <p class="gui-hint">Drag a panel by its header · Press + to expand · Click a module to toggle it</p>
       </div>
@@ -83,13 +83,31 @@
       <div class="module-list reveal" id="moduleList"></div>
     </section>
 
-    <section class="visual-break">
-      <div class="nebula" aria-hidden="true"><i></i><i></i><i></i></div>
-      <div class="shell reveal"><span>GOLDEN PLASMA NEBULA</span><h2>Eight skies.<br>One world that never sits still.</h2><p>Animated procedural skies, color-aware world lighting, atmosphere, fog tinting and optional bloom.</p><div class="sky-pills"><b>Golden Plasma</b><b>Void Nebula</b><b>Celestial Aurora</b><b>Crimson Storm</b><b>Cosmic Ocean</b><b>Ethereal Heaven</b><b>Black Hole</b><b>Starfall</b></div></div>
+    <section id="compatibility" class="compatibility shell">
+      <div class="section-head reveal"><div><span>COMPATIBILITY</span><h2>Use the launcher<br>you already like.</h2></div><p>The current release supports Minecraft 26.3. A dedicated 1.21.11 port is in progress and will appear here when it is tested.</p></div>
+      <div class="version-grid reveal">
+        <article class="version-card available"><span>AVAILABLE NOW</span><h3>Minecraft 26.3</h3><p>Fabric Loader 0.20.1+, Fabric API and Java 25.</p><a data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download 1.6.71</a></article>
+        <article class="version-card upcoming"><span>PORT IN PROGRESS</span><h3>Minecraft 1.21.11</h3><p>Coming after compatibility and in-game testing are complete.</p><b>Coming soon</b></article>
+      </div>
+      <div class="launcher-grid reveal" aria-label="Supported launchers">
+        <div><img src="assets/launcher-minecraft.svg" alt=""><span><b>Minecraft Launcher</b><small>Fabric profile</small></span></div>
+        <div><img src="assets/launcher-lunar.svg" alt=""><span><b>Lunar Client</b><small>Fabric mods</small></span></div>
+        <div><img src="assets/launcher-prism.svg" alt=""><span><b>Prism Launcher</b><small>Fabric instance</small></span></div>
+        <div><img src="assets/launcher-modrinth.svg" alt=""><span><b>Modrinth App</b><small>Fabric instance</small></span></div>
+        <div><img src="assets/launcher-fabric.svg" alt=""><span><b>Other launchers</b><small>Any matching Fabric profile</small></span></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews shell">
+      <div class="section-head reveal"><div><span>COMMUNITY REVIEWS</span><h2>Real feedback.<br>Publicly verifiable.</h2></div><p>Reviews are stored as public GitHub issues. Pick a rating, write a short review and submit it with your GitHub account.</p></div>
+      <div class="review-layout reveal">
+        <div class="review-feed"><div class="review-summary" id="reviewSummary">Loading community reviews…</div><div id="reviewList" class="review-list"></div></div>
+        <form id="reviewForm" class="review-form"><span>LEAVE A REVIEW</span><div class="star-picker" aria-label="Star rating"><button type="button" data-rating="1">★</button><button type="button" data-rating="2">★</button><button type="button" data-rating="3">★</button><button type="button" data-rating="4">★</button><button type="button" data-rating="5">★</button></div><label>Your name <input id="reviewName" maxlength="32" placeholder="Minecraft name (optional)"></label><label>Your review <textarea id="reviewText" maxlength="600" required placeholder="What did you like?"></textarea></label><button class="primary" type="submit">Continue on GitHub</button><small>GitHub keeps every review public and prevents anonymous spam.</small></form>
+      </div>
     </section>
 
     <section id="install" class="install shell reveal">
-      <div><span>GET THE CLIENT</span><h2>One JAR.<br>Your Minecraft.</h2><p>Kristians Client runs on Minecraft 26.3 with Fabric Loader 0.20.1 or newer, Fabric API and Java 25.</p></div>
+      <div><span>GET THE CLIENT</span><h2>Free to download.<br>Built to feel premium.</h2><p>Kristians Client is completely free to use—no subscription or license key. The current release runs on Minecraft 26.3 with Fabric Loader 0.20.1 or newer, Fabric API and Java 25.</p></div>
       <ol><li><b>01</b><span><strong>Download the release</strong>Get the current JAR directly from GitHub.</span></li><li><b>02</b><span><strong>Add it to Fabric</strong>Drop it into your profile’s mods folder with Fabric API.</span></li><li><b>03</b><span><strong>Open the interface</strong>Launch Minecraft and press K. Every bind is adjustable.</span></li></ol>
       <a class="primary install-button" data-download href="https://github.com/EineArtKristian/kristians-client/releases/latest/download/Kristians-Client-1.6.71-MC26.3.jar">Download Kristians Client 1.6.71</a>
     </section>

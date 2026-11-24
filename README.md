@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  A cinematic visual and customization client for Minecraft 26.3 Fabric.
+  A completely free cinematic visual and customization client for Minecraft 26.3 Fabric.
 </p>
 
 ## Highlights
@@ -29,6 +29,8 @@
 
 Lunar users can add the JAR through the profile's Fabric mods page.
 
+Minecraft 1.21.11 support is currently being ported and tested. It will be listed as a separate download when it is ready.
+
 ### Requirements
 
 | Component | Version |
@@ -37,6 +39,8 @@ Lunar users can add the JAR through the profile's Fabric mods page.
 | Fabric Loader | 0.20.1 or newer |
 | Fabric API | Current 26.3 build |
 | Java | 25 or newer |
+
+The client works with the official Minecraft Launcher, Lunar Client, Prism Launcher, Modrinth App, and other launchers that can run the matching Fabric profile.
 
 ## Multiplayer
 
@@ -50,4 +54,4 @@ Local cosmetics and visual modules work without a server installation. Synchroni
 
 ## License
 
-All rights reserved. Kristians Client is not affiliated with Mojang Studios, Microsoft, Fabric or Lunar Client.
+Kristians Client is free to download and use. The source code is not currently published, and all rights are reserved. Kristians Client is not affiliated with Mojang Studios, Microsoft, Fabric or Lunar Client.
